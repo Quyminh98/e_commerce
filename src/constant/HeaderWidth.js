@@ -1,0 +1,1 @@
+export const HeaderWidth = '80px'

@@ -1,0 +1,107 @@
+p {
+    margin-bottom: 0;
+}
+
+.carousel__img {
+    position: relative;
+}
+
+.carousel__content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 30%;
+    
+}
+
+.carousel__subtitle {
+    color: #e28985;
+    font-size: 1.3rem;
+}
+
+.carousel__title {
+    color: #242424;
+    font-size: 2.8rem;
+    font-weight: 900;
+    max-width: 260px;
+    margin: 8px 0;
+
+}
+
+.carousel__oldPrice {
+    color: #ccc;
+    text-decoration: line-through;
+    font-size: 1.3rem;
+}
+
+.carousel__newwPrice {
+    display: inline-block;
+    color: #fcb83b;
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-left: 10px;
+    margin-right: 20px;
+
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 1280px) {
+    .carousel__subtitle {
+        font-size: 1rem;
+    }
+    .carousel__oldPrice {
+        font-size: 1rem;
+    }
+    .carousel__newwPrice {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+    .carousel__title {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .carousel__content {
+        top: 44%;
+    }
+
+    .carousel__title {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .carousel__oldPrice {
+        font-size: 1rem;
+    }
+    .carousel__newwPrice {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .carousel__content {
+        top: 44%;
+    }
+    .carousel__subtitle {
+        font-size: 0.6rem;
+    }
+    .carousel__title {
+        font-size: 1.4rem;
+        line-height: 1.2rem;
+    }
+    .carousel__oldPrice {
+        font-size: 0.8rem;
+    }
+    .carousel__newwPrice {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+    .carousel__btn {
+        width: 140px;
+    }
+}

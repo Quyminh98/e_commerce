@@ -1,0 +1,95 @@
+.cover__right {
+    height: 100%;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner__card {
+    max-height: 31%;
+    width: 100%;
+    position: relative;
+}
+
+.banner__img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.banner__content {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+.banner__subtitle {
+    font-size: .9rem;
+    color: #e28985;
+}
+
+.banner__title {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    max-width: 170px;
+    padding: 5px 0;
+}
+
+.banner__overlay {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2px 32px;
+    opacity: 0;
+    transition: all .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__overlay:hover {
+    background-color: rgba(0,0,0,.35);
+    animation: shine 3s ease-in-out infinite;
+    opacity: 1;
+}
+
+@keyframes shine {
+    0% {
+        background-repeat: no-repeat;
+        background-image: -webkit-linear-gradient(top left,hsla(0,0%,98%,0) 0,hsla(0,0%,98%,0) 45%,hsla(0,0%,98%,.3) 48%,hsla(0,0%,98%,.5) 50%,hsla(0,0%,98%,.3) 52%,hsla(0,0%,98%,0) 57%,hsla(0,0%,98%,0));
+        background-position: -400px -400px;
+        background-size: 600px 600px;
+    }
+    100% {
+        background-repeat: no-repeat;
+        background-position: 300px 300px;
+    }
+}
+
+.banner__btn {
+    border-radius: 5px;
+}
+
+.banner__shopNow {
+    color: #fff;
+}
+
+@media only screen and (max-width: 1280px) {
+    .banner__subtitle {
+        font-size: .6rem;
+        
+    }
+    
+    .banner__title {
+        
+        font-size: 1rem;
+        
+    }
+}

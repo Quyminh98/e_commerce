@@ -1,0 +1,80 @@
+h5 {
+    margin: 0;
+}
+
+.new {
+    max-width: 1200px;
+    margin: 50px auto 60px;
+    background-image: url(https://tenj-ecommerce-mui.web.app/static/media/bg-1.d22cfe95.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.new__container {
+    background-color: #fff;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.new__title {
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+    padding: 20px;
+    border-right: 4px solid #eee;
+}
+
+.new__title__intro {
+    color: #000;
+    font-size: 1.6rem;
+}
+
+.new__title__main {
+    color: #e28985;
+    font-size: 1.4rem;
+}
+
+.new__content {
+    flex: 2.5 1;
+    display: flex;
+    align-items: center;
+}
+
+.new__content__text {
+    flex: 1.3 1;
+    margin-right: 16px;
+    font-size: 1.1rem;
+    color: #696969;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.new__content__text span {
+    font-size: 1.15rem;
+    color: #000;
+}
+.new__content__action {
+    flex: 1
+}
+
+@media only screen and (max-width: 1280px) {
+    .new__container {
+        flex-direction: column;
+    }
+    .new__title {
+        text-align: center;
+        padding: 0;
+        border-right: none
+    }
+    .new__content {
+        flex-direction: column;
+
+    }
+    .new__content__action {
+        margin-top: 20px;
+    }
+}
